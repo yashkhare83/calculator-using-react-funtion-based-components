@@ -1,38 +1,135 @@
-.App {
+.heading {
   text-align: center;
+  color: #181717;
+}
+.container {
+  width: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.row {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
+  padding: 0 20px 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.calcultor {
+  display: block;
+  position: fixed;
+  top: 17%;
+  left: 30%;
+  background: #efefef;
+  width: 500px;
+  border-radius: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input {
+  font-size: 24px;
+  font-weight: 700;
+  padding: 15px 16px;
+  width: 85%;
+  border: 0;
+  background: #8f8787;
+  border-radius: 4px;
+  user-select: none;
+  outline: 0;
+  color: #ffffff;
+  text-align: end;
+}
+
+.col-4 {
+  flex: 0 0 auto;
+  width: 33.33333333%;
+}
+
+.col-3 {
+  flex: 0 0 auto;
+  width: 25%;
+}
+
+.inputSection {
+  width: 100%;
+  padding: 20px;
+}
+
+button {
+  padding: 12px 16px;
+  outline: 0;
+  border: 0;
+  user-select: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.clear {
+  width: 205px;
+  border: 0;
+  background: #7ab2da;
+  padding: 16px 24px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  margin-right: 8px;
+}
+
+.allClear {
+  width: 105px;
+  border: 0;
+  background: #f75252;
+  padding: 16px 24px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  margin-right: 8px;
+}
+
+.operators {
+  width: 130px;
+  border: 0;
+  background: #eec11d;
+  padding: 16px 24px;
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.number {
+  width: 100px;
+  border: 0;
+  padding: 16px 24px;
+  background: #c6c6c6;
+  color: #000000;
+  font-size: 30px;
+  font-weight: 700;
+  margin: 0 8px 0 0;
+}
+
+.equal {
+  width: 237px;
+  background: #24a462;
 }
